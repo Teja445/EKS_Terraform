@@ -28,6 +28,10 @@ description = "EKS version"
 variable "cluster_name" {
 type = string
 default = "demo-eks-cluster"
-description = "value of the EKS cluster name"
-  
+description = "value of the EKS cluster name"  
+}
+
+variable "check pull request"{
+type = string
+default = "nothing"
 }
