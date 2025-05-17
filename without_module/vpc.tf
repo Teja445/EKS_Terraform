@@ -3,7 +3,7 @@ data "aws_availability_zones" "available" {
     state = "available"
 }
 
-resource " aws_vpc" "demo-eks-cluster-vpc" {
+resource "aws_vpc" "demo-eks-cluster-vpc" {
     cidr_block = var.cidr_block
     enable_dns_hostnames = true # Allows instances to get DNS names like "ip-10-0-0-5.ec2.internal"
     tags = var.tags

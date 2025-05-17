@@ -8,7 +8,7 @@ description = "AWS region"
 
 variable "cidr_block" {
 type = string
-default = "10.10.0.0/16"
+default = "10.10.0.0/16"   #65,536 IPs 
 }
 variable "tags" {
 type = map(string)
@@ -31,7 +31,7 @@ default = "demo-eks-cluster"
 description = "value of the EKS cluster name"  
 }
 
-variable "check pull request"{
+variable "check_pull_request"{
 type = string
 default = "nothing"
 }
